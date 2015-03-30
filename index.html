@@ -11,7 +11,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
@@ -28,11 +28,12 @@
           Salmon
         </div>
         <div class="item-price col-xs-3">
-          $60.00
+          $60
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -40,11 +41,12 @@
           Tuna
         </div>
         <div class="item-price col-xs-3">
-          $50.00
+          $50
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -52,11 +54,12 @@
           Carp
         </div>
         <div class="item-price col-xs-3">
-          $40.00
+          $40
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -64,11 +67,12 @@
           Pork
         </div>
         <div class="item-price col-xs-3">
-          $50.00
+          $50
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -76,11 +80,12 @@
           Beef
         </div>
         <div class="item-price col-xs-3">
-          $40.00
+          $40
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -88,11 +93,12 @@
           Chicken
         </div>
         <div class="item-price col-xs-3">
-          $25.00
+          $25
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -100,11 +106,12 @@
           Cereal
         </div>
         <div class="item-price col-xs-3">
-          $45.00
+          $45.5
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -112,11 +119,12 @@
           Milk
         </div>
         <div class="item-price col-xs-3">
-          $20.00
+          $20
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
@@ -124,27 +132,38 @@
           Sugar
         </div>
         <div class="item-price col-xs-3">
-          $10.00
+          $10
         </div>
         <div class="item-qty col-xs-3">
           <label>QTY</label>
           <input class="quantity">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
       </div>
       <div class="row">
+        <div class="new-item col-xs-6">
+          <input class="newItem">
+        </div>
+        <div class="new-price col-xs-3">
+          <input class="itemPrice">
+        </div>
+        <div class="col-xs-3">
+          <button id="create" type ="button" class="btn btn-success">Create</button>
+        </div>
+      </div>
+      <!-- <div class="row">
         <div class="col-xs-3 col-xs-offset-9">
           <button id="calc-prices-button" type="button" data-button='{"id": "3424"}' class="btn btn-success">
             Calculate Prices
           </button>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-xs-4 col-xs-offset-4">
           <h1 class="total-price-label">
             Total Price:
           </h1>
-          <div id="total-price">
-            $--.--
+          <div id="total-price">$0
           </div>
         </div>
       </div>

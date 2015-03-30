@@ -1,0 +1,6 @@
+.glyphicon {
+	padding-left: 10px;
+}
+.glyphicon:hover {
+	opacity: 0.7;
+}
